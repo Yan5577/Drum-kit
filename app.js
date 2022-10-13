@@ -1,4 +1,15 @@
-// const input = document.querySelectorAll('D');
+const input = document.querySelectorAll('.fa-drum');
+  input.forEach( (eachBtn) => { 
+   eachBtn.addEventListener('click', () => {
+    const drumAudio = document.querySelector(`audio[data-drumsound="${eachBtn.dataset.drumsound}"]`);
+    drumAudio.play();
+    console.dir(eachBtn.dataset)
+}) 
+}) 
+
+
+
+
 
 // Add event listener on keydown
 document.addEventListener('keydown', (event) => {
